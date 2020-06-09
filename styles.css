@@ -39,7 +39,6 @@ h1 {
 }
 
 h2 {
-    padding: 2em 0 0 0;
     text-align: center;
 }
 
@@ -64,10 +63,44 @@ p {
     padding: 0 1em;
 }
 
-section:first-child {
-    padding-top: 1em;
+.left-text {
+    display: flex;
+    flex-direction: row;
 }
 
-section:last-child {
-    padding-bottom: 1em;
+.left-text div {
+    border: 5px;
+    border-style: inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 0;
+    width: 100%;
+}
+
+.left-text img {
+    display: flex;
+    order: 1;
+    height: 100%;
+}
+
+.right-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-text div {
+    border: 5px;
+    border-style: inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 1;
+    width: 100%;
+}
+
+.right-text img {
+    display: flex;
+    order: 0;
+    height: 100%;
 }
